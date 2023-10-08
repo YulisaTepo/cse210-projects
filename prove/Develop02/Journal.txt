@@ -1,14 +1,6 @@
-> Date: 7/10/2023 21:44:51 - Prompt: What kind of day am I having, and why? 
-Answer: nono1.
-> Date: 7/10/2023 21:44:53 - Prompt: Who was the most interesting person I interacted with today? 
-Answer: nono2.
-> Date: 7/10/2023 21:45:27 - Prompt: What are my top priorities for the day? 
-Answer: n11.
-> Date: 7/10/2023 21:45:29 - Prompt: What kind of day am I having, and why? 
-Answer: n222.
-> Date: 7/10/2023 21:45:30 - Prompt: What was the most challenging thing I faced today? 
-Answer: n333.
-> Date: 7/10/2023 21:45:32 - Prompt: Who was the most interesting person I interacted with today? 
-Answer: n444.
-> Date: 7/10/2023 21:45:34 - Prompt: What did I accomplish today? 
-Answer: n555.
+> Date: 7/10/2023 23:25:56 - Prompt: What was the strongest emotion I felt today? 
+Answer: Friendship.
+> Date: 7/10/2023 23:26:06 - Prompt: What did I accomplish today? 
+Answer: My assigments.
+> Date: 7/10/2023 23:26:25 - Prompt: What are my top priorities for the day? 
+Answer: Submmit my last assigment..

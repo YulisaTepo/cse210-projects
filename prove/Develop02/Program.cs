@@ -54,9 +54,9 @@ Great! You have responded the established prompts! You're awesome!");
             {
                 Console.WriteLine("What is the filename?");
                 string filemane = Console.ReadLine();
-                Console.WriteLine(filemane);
+                Console.WriteLine("This is your Journal:");
                 //Loading file.
-                journal.LoadJournal("Journal.txt");
+                journal.LoadJournal(filemane);
             }
             else if (option == "4")
             {
