@@ -7,7 +7,8 @@ class Program
         DisplayWelcome();
         string name = PromptUserName();
         int number = PromptUserNumber();
-        int square = SquareNumber(number);
+        double square = SquareNumber(number);
+        Console.WriteLine(square);
         string result = DisplayResult(name, square);
         Console.WriteLine(result);
     }
@@ -18,7 +19,7 @@ class Program
 
     static string PromptUserName()
     {
-        Console.WriteLine("Please enter your name: ");
+        Console.Write("Please enter your name: ");
         
 
         string userName = Console.ReadLine();
@@ -30,12 +31,12 @@ class Program
         int userNumber = Console.Read();
         return userNumber;            
     }
-    static int SquareNumber(int userNumber)
+    static double SquareNumber(int userNumber)
     {
-        int square = userNumber * userNumber;
+        double square = Math.Sqrt(userNumber);
         return square;            
     }
-    static string DisplayResult(string userName, int square)
+    static string DisplayResult(string userName, double square)
     {
         string result = $"{userName}, the square of your number is {square}.";
         return result;
