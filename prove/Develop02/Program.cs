@@ -52,14 +52,18 @@ Great! You have responded the established prompts! You're awesome!");
             }
             else if (option == "3")
             {
-                Console.WriteLine("This is your Journal:");
+                Console.WriteLine("What is the filename?");
+                string filemane = Console.ReadLine();
+                Console.WriteLine(filemane);
                 //Loading file.
                 journal.LoadJournal("Journal.txt");
             }
             else if (option == "4")
             {
+                Console.WriteLine("What is the filename?");
+                string filemane = Console.ReadLine();
                 // Saving file.
-                journal.SaveToFile("Journal.txt");
+                journal.SaveToFile(filemane);
                 Console.WriteLine("Your Journal is saved.");
             }
             else if (option == "5")
