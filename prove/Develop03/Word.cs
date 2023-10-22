@@ -7,7 +7,7 @@ public class Word
     {
         _word = word;
     }
-    public bool GetIsHidden() // This is only for the IscompleteHidden method on Scripture. 
+    public bool GetIsHidden() 
     {
         if (_IsHidden == true)
         {
