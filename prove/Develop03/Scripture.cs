@@ -26,17 +26,18 @@ public class Scripture
     {
         for (int i = 0; i < 3; i++)
         {
-        //    while (true)
-        //    {
+            while (true) //This while loop will just hide the words that are not already hidden. 
+            {
                 Random word = new Random();
                 int index = word.Next(_scripture.Count());
-                //if (_scripture[index].GetIsHidden() == false)
-                //{
+                
+                if (_scripture[index].GetIsHidden() == false)
+                {
                     _scripture[index].Hide();
-                    //break;
-                //}
-            //} 
-
+                    break;
+                }
+                
+            }
         }
     }
     public bool IsCompletelyHidden()

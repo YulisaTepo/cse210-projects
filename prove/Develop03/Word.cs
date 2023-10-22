@@ -6,7 +6,6 @@ public class Word
     public Word(string word)
     {
         _word = word;
-        //_IsHidden = false;
     }
     public bool GetIsHidden() // This is only for the IscompleteHidden method on Scripture. 
     {
@@ -27,11 +26,12 @@ public class Word
             return _word;
         }
         else
-        {
-            string convertedWord = string.Concat(Enumerable.Repeat("_", _word.Length));
+        {   //This syntax replace the word (i.e. "Hello") to underscores (i.e. "-----") with the exact numbers 
+            //of the characteres that the word has. 
+            string convertedWord = string.Concat(Enumerable.Repeat("_", _word.Length)); 
             return convertedWord;
         }
     } 
-    public void Hide() // This will set _hidden to false
+    public void Hide()
     {_IsHidden = true;}
 }
