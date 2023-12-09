@@ -54,11 +54,10 @@ public class Order
 
     public string GetResult()
     {
-        return @$"
-PACKING LABEL 
-{GetPackingLabel()}
-SHIPPING LABEL {GetShippingLabel()} 
-
-TOTAL COST: ${TotalCost()}";
+        StringBuilder sb = new StringBuilder();
+        sb.Append($"PACKING LABEL \n{GetPackingLabel()}");
+        sb.Append($"SHIPPING LABEL {GetShippingLabel()}");
+        sb.Append($"\nTOTAL COST: ${TotalCost()}");
+        return sb.ToString();
     }
 }

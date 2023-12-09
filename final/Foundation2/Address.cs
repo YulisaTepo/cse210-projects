@@ -15,14 +15,15 @@ public class Address
 
     public bool IsInUSA()
     {
-        if (_country == "USA")
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
+        //if (_country == "USA")
+        //{
+        //    return true;
+        //}
+        //else
+        //{
+        //    return false;
+        //}
+        return _country.ToUpper() == "USA";
     }
     public string toString()
     {

@@ -1,3 +1,5 @@
+using System.Text;
+
 public class Customer
 {
     private string _name;
@@ -19,9 +21,13 @@ public class Customer
         return _address.IsInUSA();
     }
 
-    public string GetCustomer()
+    public string GetCustomer() //USE STRINGBUILDER
     {
-        return @$"
-Customer: {_name} | Address: {_address.toString()}";
+        StringBuilder sb = new StringBuilder();
+        sb.Append($"Customer: {_name} |");
+        sb.Append($" Address: {_address.toString()}");
+        return sb.ToString();
+//@$"
+//Customer: {_name} | Address: {_address.toString()}";
     }
 }

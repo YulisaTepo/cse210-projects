@@ -42,7 +42,7 @@ class Program
             Console.WriteLine("________________________________________________________________________________________");
             Console.WriteLine("\nVIDEO");
             Console.WriteLine(video.toString());
-            Console.WriteLine("COMMENTS");
+            Console.WriteLine("\nCOMMENTS");
             Console.WriteLine(video.GetCommentList());
         }
     }
