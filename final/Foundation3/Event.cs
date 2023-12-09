@@ -18,12 +18,10 @@
         {
             return $"Title: {_eventTitle}\nDescription: {_description}\nDate: {_date}\nTime: {_time}\nAddress: {_address.GetAddress()}";
         }
-
         public virtual string GetFullDetails()
         {
             return $"{GetStandardDetails()} \nEvent: {this.GetType().Name} ";
         }
-
         public virtual string GetShortDescription()
         {
             return $"Event: {this.GetType().Name}\nTitle: {_eventTitle}\nDate: {_date}";

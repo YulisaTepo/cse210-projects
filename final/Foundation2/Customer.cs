@@ -8,26 +8,21 @@ public class Customer
     public Customer(string name, Address address)
     {
         _name = name;
-        _address = address;
-        
+        _address = address;   
     }
     public string GetName()
     {
         return _name;
     }
-
     public bool CheckIsInUSA()
     {
         return _address.IsInUSA();
     }
-
-    public string GetCustomer() //USE STRINGBUILDER
+    public string GetCustomer()
     {
         StringBuilder sb = new StringBuilder();
         sb.Append($"Customer: {_name} |");
         sb.Append($" Address: {_address.toString()}");
         return sb.ToString();
-//@$"
-//Customer: {_name} | Address: {_address.toString()}";
     }
 }

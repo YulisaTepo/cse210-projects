@@ -51,7 +51,6 @@ public class Order
     {
         _products.Add(product);
     }
-
     public string GetResult()
     {
         StringBuilder sb = new StringBuilder();

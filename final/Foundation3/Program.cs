@@ -4,9 +4,6 @@ class Program
 {
     static void Main(string[] args)
     {
-        //Address address1 = new Address("Daniel Alcides #123");
-        //Address address2 = new Address("Santa Rosa #248");
-        //Address address3 = new Address("Manuel Seoane #183");
         Lectures lectures = new Lectures("Romeo and Juliet", "William Shakespeare Tragedy", "02/01/2024", "7:00PM", new Address("Daniel Alcides #123, Guadalupe, La libertad"), "Daniels Smith", 20);
         Reception reception = new Reception("Concert", "Official Carnival Party 2024 - Cajamarca", "10/02/2024", "5:00PM", new Address("Fongal Cajamarca, Av. Atahualpa, Inca Baths"), "register_here@gmail.com");
         Outdoor_Gathering outdoorGathering = new Outdoor_Gathering("Bingo", "Play bingo, a lot of awards waiting for you!", "15/01/2024", "3:00PM", new Address("Manuel Seoane #183, Guadalupe, La libertad"), "22°C, clear with cloudy intervals");
@@ -32,7 +29,6 @@ class Program
         Console.WriteLine(outdoorGathering.GetStandardDetails());
         Console.WriteLine();
         Console.WriteLine(outdoorGathering.GetFullDetails());
-
     }
 
 }
